@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.springProject.constructor.Certi" name="certi">
+ 
+ <constructor-arg>
+ <value>java fullstack </value>
+ 
+ </constructor-arg>
+ 
+ 
+ </bean>
+ 
+
+<bean class ="com.springProject.constructor.Person" name ="PCI">
+
+<constructor-arg>
+<value>Aryan</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>101</value>
+</constructor-arg>
+<constructor-arg ref ="certi" />
+</bean>
+
+<bean class="com.springProject.constructor.Student1"  name="std">
+<constructor-arg>
+<value>121</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>monika</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>97</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>85</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>92</value>
+</constructor-arg>
+
+</bean>
+
+<bean class="com.springProject.constructor.Product"  name="pdt">
+<constructor-arg>
+<value>1331</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>shampoo</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>23</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>8</value>
+</constructor-arg>
+
+<constructor-arg>
+<value>M03</value>
+</constructor-arg>
+
+</bean>
+
+
+
+</beans>
